@@ -1,0 +1,556 @@
+#archive_report
+	.ant-checkbox-group
+		display flex
+		align-items center
+		margin-left 0
+	
+	.heading
+		font-size 16px
+		font-weight 500
+		display table
+		margin 0 auto
+	
+	.contain 
+		margin-top 86px
+		padding 25px 12px
+		background #fff
+		
+	.top-0 
+		margin-top 0 !important
+	
+	.back-transparant 
+		background-color transparent !important
+	
+	.white 
+		width 100%
+		margin-top 40px
+	
+	.mar-top-35 
+		margin-top 35px !important
+	
+	.pump-graph 
+		border-bottom 1px solid #adadad
+		margin-top 30px
+		padding-bottom 30px
+		margin-left 20px
+		margin-right 20px
+
+		&:last-child 
+			border-bottom 0
+			
+	.pad-top-25 
+		padding-top 25px !important
+	
+	.pad-left-25
+		padding-left 25px !important
+	
+	.height-500
+		height 500px
+	
+	.border-left-style
+		border-left 1px solid #ddd
+	
+	.success 
+		color #52c41a
+	
+	.warning 
+		color #faad14
+	
+
+	.danger 
+		color #f5222d
+	
+	.hed 
+		font-size 14px
+		font-weight bold
+		margin-bottom 10px
+		margin-left 15px
+		text-align left
+		margin-top 10px
+	
+	.mar-20 
+		margin 20px !important
+	
+	.sump-graph 
+		margin-top 30px
+		padding-bottom 30px
+		border-bottom 1px solid #adadad
+	
+	.box-shadow-style
+		box-shadow: 0 1px 7px 2px #ddd;
+	.center 
+		text-align center
+	
+	.bold 
+		font-weight bold
+	
+	.no-border 
+		border none !important
+	
+	.border-bot 
+		border-bottom 1px solid #d9d9d9
+	
+	.graph-avg-value 
+		font-size 20px
+		font-weight bold
+		padding-right 6px
+	
+	.value-name 
+		color #063261
+		
+	
+	
+	.report-table-container
+		overflow auto
+		width 100% //calc(100% - 30px)
+		
+		table
+			margin-bottom 0px
+			
+			thead
+				background-color #EEE !important
+				
+				th, td
+					color #777
+					text-align center
+							
+				th:first-child
+					// min-width 320px
+					border none
+					display block	
+				
+			tbody
+				tr
+					td
+						text-align center
+						
+						ul
+							list-style-type none
+							
+							.list-alignment
+								text-align left
+								
+								.list:before
+									content ''
+									width 10px
+									height 10px
+									margin-right 5px
+									border-radius 50%
+									display inline-block
+								.list.on:before
+									background-color #15cca0
+								.list.off:before
+									background-color #f48787
+								
+								.list:before
+										content ''
+										width 10px
+										height 10px
+										margin-right 5px
+										border-radius 50%
+										display inline-block
+								.list.dev-on:before
+									background-color #15cca0
+								.list.dev-off:before
+									background-color #f48787
+						
+						.alert-details
+							padding-left 10px
+	
+	.tr-center
+		display table
+		margin 5px auto
+		
+	.time-average
+		min-width 300px
+		
+	.data-view
+		width 740px
+	
+	.data-view-time-picker
+		width 300px !important
+	
+	.note-content
+		line-height 25px
+		height 55px
+		font-size 14px
+	
+	.calendar-icon
+		width 100% !important
+	.archive-container
+		height calc(100% - 50px) !important
+		// margin-top 50px !important
+
+		.archive-aqi-container
+			width 400px
+			display table
+			margin auto
+
+	.container-report
+		margin-left 200px
+		margin-top 52px
+
+	.archive-form
+		width 100%
+		max-width 960px
+		margin 30px auto 20px
+		
+		.archive-title
+			text-align center
+			color #666
+			
+		.archive-options
+			width 100%
+			margin 30px 0
+			display table
+			
+			.option-row
+				width 100%
+				display table
+				margin-bottom 1px
+				display flex
+				align-items center
+				background-color #CCC
+				
+				.option-label, .option-content
+					width 20%
+					float left
+					color #555
+					font-size 16px
+					padding 0 10px
+				
+				.option-label
+					.option
+						font-size 12px
+						display flex
+						align-items center
+						
+						#all_params
+							margin 0
+							
+						label
+							margin 0 0 0 5px
+					
+				.option-content
+					width 80%
+					color #777
+					min-height 40px
+					line-height 40px
+					background-color #EEE
+					
+					.pr-options
+						width 100%
+						top 35px
+					
+					.station-area
+						width 300px
+						
+						.label-multi-stations-select ,.label-city-select
+							font-weight normal
+							margin 0 10px
+							
+					.data-source
+						display flex
+						align-items center
+						
+						.station-area
+							width auto
+							display flex
+							align-items center
+						
+						.pr-react-select
+							width 250px
+					
+					.pr-react-select
+						height 35px
+						margin 3px 0 1px
+						
+						.pr-selected-items, .pr-placeholder
+							position absolute
+							top 3px
+					
+						.pr-option
+							line-height 25px
+							padding 5px 8px
+							
+						.pr-select-all
+							line-height 15px
+					
+					.pr-react-select:after
+						top 3px
+					
+					.pr-react-select.single
+						border 0px solid #dee0e9
+						color #797979
+						background-color #dee0e9
+					
+					.form-control
+						height 30px
+						width 100%
+						max-width 240px
+						margin 5px 0
+						padding 0 10px
+						outline none
+						box-shadow none
+						border-radius 0
+						float left
+						
+					.option
+						width 20%
+						display inline-block
+						float left
+						
+						label
+							margin 0 5px
+							font-weight normal
+
+					.option.lg
+						width 40%
+
+						.form-control
+							width 30%
+							float right
+					
+					.data-type-option-select-error
+						width 30%
+						display inline-block
+						padding 0 15px
+						
+						.data-type-error-text
+							color red
+							font-size 14px
+						
+					.hyphen
+						width 60px
+						text-align center
+						float left
+						
+					.date-time
+						width 240px
+						display table
+						float left
+							
+		.archive-btns
+			display table
+			margin 0 auto 30px
+			
+			.btn
+				margin 0 10px
+				width 120px
+				border-radius 0
+				padding 0
+	
+	.summary-table-rainfall
+		overflow auto
+		width 690px
+		display table
+		margin 0 auto
+		margin-top: 20px !important;
+	
+	.text-time-raw
+		width 228px
+	
+	.padding-left-5
+		padding-left 5px
+	
+	.width-170
+		width 170px
+	
+	.rainfall-contain
+		margin-top 36px
+				
+	.archive-graph-container
+		box-shadow 5px 5px 5px -5px #666
+		border 1px solid #DDD
+		margin 30px 20px
+		position relative
+		
+		.outlier
+			position absolute
+			bottom 10px
+			right 30px
+			display flex
+			align-items center
+			
+			.text-outlier
+				margin-right 10px
+				
+			.onoffswitch
+				width 25px !important
+				
+				.onoffswitch-label
+					height 12px !important
+					border 2px solid #fff !important
+					
+					.onoffswitch-inner:before
+						content "" !important
+						background-color #9bc5e8 !important
+					
+					.onoffswitch-inner:after
+						content "" !important
+						background-color #bdc2c4 !important
+					
+					.onoffswitch-inner:after, .onoffswitch-inner:before
+						height 12px !important
+						line-height 16px !important
+						
+					.onoffswitch-switch
+						position absolute
+						display inline-flex !important
+						width 14px !important
+						height 14px !important
+						background #857f7f !important
+						top -2px !important
+						right 9px
+						border 0px solid #ddd !important
+						
+					.blue
+						background #2673B5 !important
+					
+				.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch
+					right 0px !important
+			
+			.svg-setting
+				display flex
+				align-items center
+				padding-left 10px
+				
+				svg
+					cursor pointer
+			
+			.svg-setting svg.active-blue
+				fill #2673B5
+			
+			.svg-setting svg.inactive-grey
+				fill #857F7F
+				
+		.modal
+			display block
+			background-color rgba(192,192,192,0.5)
+			text-align center
+			overflow auto
+
+			.table
+				margin-bottom 0
+
+				.center
+					text-align center
+
+				.line_height
+					line-height 2.7
+
+			@media (min-width: 768px)
+				.modal-dialog
+					width 420px
+					margin 30px auto
+					padding 70px 0
+					text-align center
+
+	// #rose_chart .highcharts-xaxis-grid>.highcharts-grid-line
+		// stroke-width 0px
+		// stroke #d8d8d8
+
+	.modal-header-param
+		color #fff
+		padding 9px 15px
+		border-bottom 1px solid #eee
+		background-color #2673B5
+		-webkit-border-top-left-radius 5px
+		-webkit-border-top-right-radius 5px
+		-moz-border-radius-topleft 5px
+		-moz-border-radius-topright 5px
+		border-top-left-radius 5px
+		border-top-right-radius 5px
+		
+		.modal-title-param
+			color #fff !important
+		
+		.close
+			outline none
+			margin-top 0
+			font-size 24px
+			color #fff
+			opacity 0.8
+
+		.close:hover, .close:focus
+			color #FFF
+			text-decoration none
+			cursor pointer
+			opacity 1		
+				
+	.archive-table-container
+		box-shadow 5px 5px 5px -5px #666
+		//margin 30px 20px
+		overflow auto
+		
+		.table
+			margin-bottom 0
+			
+			thead
+				background-color #EEE
+				
+			th, td
+				color #777
+				text-align center
+				
+			tbody
+				.min-width-name
+					min-width 250px
+					padding 0px 8px
+					
+				tr
+					th:first-child
+						min-width 320px
+						border none
+						display block
+
+					td
+						padding 0px
+						vertical-align middle
+						height 37px
+						min-width 100px
+
+	.data-rain
+		display inline-block
+		line-height 2.58
+		min-width 100px
+
+	.text-center
+		.bold
+			font-size 15px
+			font-weight bold
+			margin 0px 0 10px
+			
+		.report-table-container
+			.thead
+				background-color #eee
+	.error-msg-no-data
+		text-align center
+		margin 20px
+
+	.align-middle
+		vertical-align middle !important
+
+	.data-aqi
+		display flex
+
+		div
+			border-right: 1px solid #ddd;
+			width: calc(100%/2);
+			min-width: 100px;
+			line-height: 2.58;
+
+		div:nth-child(2)
+			border-right: 0px
+		
+	.data-avg-min-max
+		display flex
+
+		div 
+			border-right 1px solid #dddddd
+			width calc(100%/3)
+			min-width 100px
+			line-height 2.58
+
+		div:nth-child(3n)
+			border none

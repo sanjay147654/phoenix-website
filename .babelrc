@@ -1,0 +1,11 @@
+{
+	"presets": [
+		"env", "flow", "es2017" ,"react"
+	],
+	"plugins": [
+		"transform-flow-strip-types",
+		"transform-runtime"
+	]
+}
+
+

@@ -1,0 +1,20 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+/node_modules/*/**
+/flow-typed/*/**
+package-lock.json
+/build/*/**
+.eslintcache
+doc/
+.ftpkey
+/src/api/.dbkey
+npm-debug.log
+npm-debug.log.*
+!/build/app/index.html
+/uploads/*
+.vscode/launch.json
+Api_Documentation/**/*
+**/node_modules/*/**
+DOCUMENTATION/**/~*.*
+DOCUMENTATION/Api_Documentation
+TestingDocuments/API/Api Tests.docx
+src/api/local.library_paths

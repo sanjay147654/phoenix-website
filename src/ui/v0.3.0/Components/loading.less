@@ -1,0 +1,229 @@
+.loading {
+	width: 100%;
+	height: 100vh;
+
+	.top {
+		height: 42px;
+		width: 100%;
+		padding-left: 230px;
+		background: #000;
+		position: absolute;
+	}
+
+	.animate {
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-name: placeHolderShimmer;
+		animation-timing-function: linear;
+		background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+		background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+		background: linear-gradient(to right, #eeeeee 8%, #b7b7b7 18%, #eeeeee 33%);
+		background-size: 800px 104px;
+	}
+
+	.left-load {
+		float: left;
+	}
+
+	.back {
+		width: 30px;
+		height: 30px;
+		margin: 6px;
+		margin-left: 15px;
+		position: relative;
+		float: left;
+	}
+
+	.text-load {
+		width: 200px;
+		height: 5px;
+		margin: 17px;
+		margin-left: 45px;
+		position: relative;
+		float: left;
+	}
+
+	.right-load {
+		float: right;
+	}
+
+	.logo-load {
+		width: 10px;
+		height: 10px;
+		margin: 15px;
+		margin-left: 15px;
+		position: relative;
+		float: left;
+		margin-right: 0;
+	}
+
+	.logo-text-load {
+		width: 50px;
+		height: 5px;
+		margin: 17px;
+		margin-left: 10px;
+		position: relative;
+		float: left;
+	}
+
+	.side {
+		position: absolute;
+		height: 100vh;
+		width: 230px;
+		padding: 20px 20px;
+		background-color: #000;
+		z-index: 2;
+	}
+
+	@keyframes placeHolderShimmer {
+		0% {
+			background-position: -468px 0
+		}
+		100% {
+			background-position: 468px 0
+		}
+	}
+
+	.timeline-wrapper {
+		color: #141823;
+		background-color: #000;
+		display:flex;
+	}
+
+	.timeline-item {
+		padding: 8px;
+		width: 20%;
+		max-width: 472px;
+	}
+
+	.timeline-item:first-child {
+		margin-left: 18%;
+	}
+
+	.animated-background {
+		animation-duration: 1.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-name: placeHolderShimmer;
+		animation-timing-function: linear;
+		background: #f6f7f8;
+		background: #eeeeee;
+		background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+		background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+		background: linear-gradient(to right, #eeeeee 8%, #b7b7b7 18%, #eeeeee 33%);
+		background-size: 800px 104px;
+		height: 27px;
+		position: relative;
+		margin-bottom: 45px;
+	}
+
+	.background-masker {
+		background: #000;
+		position: absolute;
+		box-sizing: border-box;
+	}
+
+	.outlined .background-masker {
+		border: 1px solid #ddd;
+	}
+
+	.outlined:hover .background-masker {
+		border: none;
+	}
+
+	.outlined:hover .background-masker:hover {
+		border: 1px solid #ccc;
+		z-index: 1;
+	}
+
+	.background-masker.header-top,
+	.background-masker.header-bottom,
+	.background-masker.subheader-bottom {
+		top: 0;
+		left: 27px;
+		right: 0;
+		height: 10px;
+	}
+
+	.background-masker.header-left,
+	.background-masker.subheader-left,
+	.background-masker.header-right,
+	.background-masker.subheader-right {
+		top: 10px;
+		left: 27px;
+		height: 16px;
+		width: 17px;
+	}
+
+	.background-masker.header-bottom {
+		top: 18px;
+		height: 15px;
+	}
+
+	.background-masker.subheader-left,
+	.background-masker.subheader-right {
+		top: 24px;
+		height: 6px;
+	}
+
+	.background-masker.header-right,
+	.background-masker.subheader-right {
+		width: auto;
+		left: 300px;
+		right: 0;
+	}
+
+	.background-masker.subheader-right {
+		left: 230px;
+	}
+
+	.background-masker.subheader-bottom {
+		top: 30px;
+		height: 10px;
+	}
+
+	.background-masker.content-top,
+	.background-masker.content-second-line,
+	.background-masker.content-third-line,
+	.background-masker.content-second-end,
+	.background-masker.content-third-end,
+	.background-masker.content-first-end {
+		top: 40px;
+		left: 0;
+		right: 0;
+		height: 6px;
+	}
+
+	.background-masker.content-top {
+		height: 60px;
+	}
+
+	.background-masker.content-first-end,
+	.background-masker.content-second-end,
+	.background-masker.content-third-end {
+		width: auto;
+		left: 380px;
+		right: 0;
+		top: 60px;
+		height: 8px;
+	}
+
+	.background-masker.content-second-line {
+		top: 68px;
+	}
+
+	.background-masker.content-second-end {
+		left: 420px;
+		top: 74px;
+	}
+
+	.background-masker.content-third-line {
+		top: 82px;
+	}
+
+	.background-masker.content-third-end {
+		left: 300px;
+		top: 88px;
+	}
+}

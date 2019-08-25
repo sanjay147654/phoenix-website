@@ -1,0 +1,469 @@
+#forecast {
+	background-color: #f2f8f9;
+	
+	.success {
+		color: #52c41a;
+	}
+
+	.warning {
+		color: #faad14;
+	}
+
+	.danger {
+		color: #f5222d;
+	}
+
+	.white {
+		background-color: #fff !important;
+		padding: 25px 30px;
+	}
+
+	.back-transparant {
+		background-color: transparent !important;
+	}
+
+	.mobile-hide {
+		display: block;
+	}
+
+	.mobile-show {
+		display: none;
+	}
+
+	.mar-bot-25 {
+		margin-bottom: 25px;
+	}
+
+	.bold {
+		font-weight: bold;
+	}
+
+	.center {
+		text-align: center;
+		max-height: 200px;
+	}
+
+	.float-l {
+		float: left;
+		text-align: left;
+		display: inline;
+	}
+
+	.float-r {
+		float: right;
+		text-align: left;
+		display: inline;
+	}
+
+	.all-caps {
+		text-transform: capitalize;
+	}
+
+	.mar-top-45 {
+		margin-top: 45px !important;
+	}
+
+	.mar-bot-35 {
+		margin-bottom: 35px !important;
+	}
+
+	.mar-bot-28 {
+		margin-bottom: 28px !important;
+	}
+
+	.contains {
+		margin: 0 30px;
+		margin-left: 230px;
+	}
+
+	.rows {
+		margin-top: 20px;
+	}
+
+	.cols {
+		text-align: center;
+		margin: 5px 11px;
+		margin-bottom: 0;
+	}
+
+	.contain {
+		margin-top: 86px;
+		background: #fff;
+	}
+
+	.device-row {
+		width: 100%;
+		padding: 18px 0;
+		border-bottom: 1px solid #d9d9d9;
+	}
+
+	.hed {
+		font-size: 14px;
+		color: #063261;
+		font-weight: bold;
+		margin-bottom: 35px;
+		text-align: left;
+		margin-top: 10px;
+	}
+
+	.head {
+		font-size: 20px;
+		padding-top: 55px;
+		margin-bottom: 5px;
+		margin-left: 20px;
+		font-weight: bold;
+		text-align: left;
+	}
+
+	.full-height {
+		height: 430px;
+		width: 100%;
+	}
+
+	.section-head {
+		padding: 15px;
+		color: #063261;
+		border-bottom: 1px solid #ddd;
+		position: sticky;
+		top: 0;
+		margin-right: 1px;
+		background-color: #fff;
+		z-index: 1;
+	}
+
+	/*.highcharts-container {
+		width: 1000px !important;
+		height: 500px !important;
+	}*/
+
+	.ant-tabs {
+		width: 100%;
+	}
+
+	.chart-container {
+		width: 100%;
+	}
+
+	.ant-table-wrapper {
+		width: 100%;
+	}
+
+	.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+		padding: 10px 16px;
+	}
+
+	.ant-table-pagination.ant-pagination {
+		display: none;
+	}
+
+	.grid-style {
+		width: 178px !important;
+	    margin: 0 8px;
+	    padding: 0;
+	    margin: 8px !important;
+	    cursor: pointer;
+	}
+
+	.ant-card-head {
+		border-bottom: none;
+	}
+
+	.ant-card-body {
+		background: #f7f7f7;
+	}
+
+	.card-head {
+		background: #ebeaea;
+		padding: 5px 10px;
+		text-align: center;
+	}
+
+	.card-body {
+		background: #fff;
+	}
+
+	.features {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: left;
+		background: #f7f7f7;
+	}
+
+	.features .feature {
+		width: 165px;
+		background: #fff;
+		padding: 20px;
+		margin: 10px 20px;
+	}
+
+	.live-img {
+		width: 135px;
+		height: 120px;
+	}
+
+	.ant-spin-nested-loading > div > .ant-spin .ant-spin-dot {
+		top: 70%;
+	}
+}
+
+.forecast-modal {
+	top: 5px !important;
+	width: 100% !important;
+
+	.ant-modal-content {
+		background-color: transparent;
+	}
+
+	.ant-modal-header {
+		background: transparent;
+		border-bottom: 0;
+	}
+
+	.ant-modal-close {
+		color: rgba(255, 255, 255, 0.65);
+		transition: 0.5s;
+		margin: 20px;
+	}
+	
+	.ant-modal-close-x {
+		font-size: 25px;
+		width: 25px;
+		height: 25px;
+		line-height: 25px;
+	}
+
+	.ant-modal-close:focus, .ant-modal-close:hover {
+		color: #fff;
+		outline: none;
+	}
+
+	.ant-modal-title {
+		color: #fff;
+	}
+
+	.ant-modal-body {
+		text-align: center;
+	}
+
+	.ant-modal-footer {
+		display: none;
+	}
+
+	.modal-img {
+		max-height: 500px;
+		min-height: 500px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#forecast {
+		.map-container {
+			width: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#forecast {
+		.white {
+			width: 100%;
+			margin-top: 40px;
+		}
+
+		.mobile-hide {
+			display: none;
+		}
+
+		.mobile-show {
+			display: block;
+		}
+
+		.width-100 {
+			width: 100%;
+			margin-top: 80px;
+		}
+
+		.map-container {
+			margin: 0px;
+			width: 100%;
+		}
+
+		.ant-table-content {
+			overflow-x: scroll;
+		}
+
+		.ant-table-body {
+			width: 150%;
+		}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+
+	#forecast {
+		.device-details {
+			display: none;
+		}
+
+		.width-100 {
+			margin-top: 0;
+		}
+
+		.back-white {
+			background: #fff;
+			padding: 20px 0;
+		}
+
+		.pad-t-35 {
+			padding-top: 35px;
+		}
+
+		.pad-lr-20 {
+			padding: 0 20px;
+		}
+
+		.display-none {
+			display: none;
+		}
+
+		.mar-bot-25 {
+			margin-bottom: 25px !important;
+		}
+
+		.aqi-scale {
+			width: 84%;
+			margin: 0 auto !important;
+		}
+
+		.aqi-trend {
+			padding-left: 0;
+		}
+
+		.ant-col-4 {
+			width: 10%;
+		}
+
+		.aqi-value {
+			font-size: 34px;
+		}
+
+		.aqi-status {
+			margin-bottom: 9px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#forecast {
+		.ant-table-body {
+			width: 200%;
+		}
+	}
+}
+
+@media (min-width: 600px) and (max-width: 640px) {
+	#forecast {
+		.ant-col-4 {
+			width: 16%;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	#forecast {
+		.ant-table-body {
+			width: 350%;
+		}
+
+		.mar-left-0 {
+			margin-left: 0 !important;
+		}
+
+		.center {
+			max-height: 253px;
+    		width: 100%;
+		}
+
+		.float-r {
+			float: left;
+			margin-top: 15px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	#forecast {
+		.ant-table-body {
+			width: 400%;
+		}
+	}
+}
+
+/*@media screen and (max-width: 425px) {
+	
+	#forecast {
+		.city-select {
+			width: 100%;
+			margin-left: 0;
+		}
+
+		.ant-select {
+			width: 100% !important;
+		}
+
+		.ant-col-7 {
+			width: 51%;
+		}
+
+		.mar-top-20 {
+			margin-top: 20px;
+		}
+
+		.width-41 {
+			width: 41% !important;
+		}
+
+		.font-24 {
+			font-size: 18px;
+			width: 30%;
+		}
+
+		.weather-value {
+			font-size: 14px;
+		}
+
+		.hr24-graph {
+			display: none;
+		}
+
+		.pad-lr-10 {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		.width-22 {
+			width: 22% !important;
+		}
+
+		.ant-col-4 {
+			width: 16.66666667%;
+		}
+
+		.width-90 {
+			width: 90%;
+		}
+
+		.aqi-value {
+			font-size: 34px;
+		}
+
+		.aqi-status {
+			margin-bottom: 2px;
+		}
+
+		.parameter-trend {
+			max-height: unset;
+		}
+	}
+
+}*/

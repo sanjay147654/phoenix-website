@@ -1,0 +1,311 @@
+@import "bootstrap.css"
+@import "menu.less"
+@import "forecast.less"
+@import "dashboard.less"
+@import "device.less"
+@import "map.less"
+@import "station.less"
+@import "users.less"
+@import "alert.less"
+@import "loading-spinner.styl"
+@import "archive.styl"
+@import "archive.less"
+@import "light-box-style.css"
+@import "flood-model-3rd-party.less"
+@import "slide-show.less"
+
+*
+	font-family -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
+
+body {
+	// margin: 0;
+	// padding: 0;
+	// font-family: sans-serif;
+	font-family: PT Sans,sans-serif;
+	font-size: 14px;
+	background-color: #f2f8f9;
+}
+
+.hellip {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.margin-top-20 {
+	margin-top 20px;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	background-color: #dfdfdf;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+	background-color: #f2f8f9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+		background-color: #C1C1C1;
+}
+
+.ant-layout {
+	background-color: transparent;
+}
+
+.ant-divider, .ant-divider-vertical {
+	height: 2.9em !important;
+}
+
+.ant-confirm-body .ant-confirm-title {
+	text-align: left;
+}
+
+.ant-form {
+	width: 100% !important;
+}
+
+.ant-input-disabled {
+	color: #525252 !important;
+}
+
+.ant-popover-message {
+	.anticon {
+		display: none;
+	}
+}
+
+
+.aqi-scale-title
+	width calc(100% - 100px)
+	font-size 12px
+	margin auto
+
+.colored-index, .colored-index-text
+	width calc(100% - 100px)
+	margin 0 auto 15px
+	font-size 11px
+
+	.color-index
+		width calc(100%/6)
+		height 15px
+		display inline-block
+	
+	.first-index
+		text-align left
+		width calc(100%/6 - 6px)
+
+	.second-index
+		text-align left
+		width calc(100%/6 - 4px)
+
+	.third-index
+		text-align left
+
+	.fourth-index
+		text-align left
+
+	.fifth-index
+		text-align left
+
+	.sixth-index
+		text-align left
+		width calc(100%/6 - 10px)
+
+	.seventh-index
+		text-align right
+		width calc(100%/6 - 14px)
+
+	.sixth-index-archive
+		text-align left
+		width calc(100%/6 - 20px)
+
+	.seventh-index-archive
+		text-align right
+		width calc(100%/6 - 20px)	
+
+	.first-index-text
+		display inline-block
+		width 50%
+		text-align left
+		
+	.last-index-text
+		display inline-block
+		width 50%
+		text-align right
+
+.colored-index
+	margin 0 auto 2px
+
+
+.colored-bar
+	width calc(100% - 100px)
+	margin 5px auto 0
+	height 15px
+	
+	.color-bar
+		width calc(100%/6)
+		height 15px
+		display inline-block
+	
+	.color-one
+		background-color $color-1
+	
+	.color-two
+		background-color $color-2
+	
+	.color-three
+		background-color $color-3
+	
+	.color-four
+		background-color $color-4
+		
+	.color-five
+		background-color $color-5
+	
+	.color-six
+		background-color $color-6
+
+
+.ant-popover-buttons {
+	display: none;
+}
+
+.ant-popover-message-title {
+  padding-left: 0px !important;
+}
+
+.App
+	text-align: center;
+	height: 100%;
+	
+	a
+		text-decoration none
+
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+		height: 80px;
+	}
+
+	.App-header {
+		background-color: #222;
+		height: 150px;
+		padding: 20px;
+		color: white;
+	}
+
+	.App-title {
+		font-size: 1.5em;
+	}
+
+	.App-intro {
+		font-size: large;
+	}
+	
+	.loading
+		top 0
+		width calc(100% - 230px)
+		height 100%
+		display flex
+		align-items center
+		position absolute
+		background-color white
+
+		.loading-spinner
+			margin auto
+			
+	.inline-loading
+		padding 30px 0
+		text-align center
+	
+	.no-data-text-container
+		width 100%
+		
+	.no-data-text
+		color #999
+		height 100%
+		font-size 24px
+		text-align center
+		display flex !important
+		justify-content center
+		padding 30px 0
+
+		center
+			display table
+			margin auto
+
+a:hover {
+	text-decoration: none !important;
+}
+
+.alert-error
+	border 1px solid #ffa39e
+	background-color #fff1f0
+
+.alert-warning
+	border 1px solid #ffe58f
+	background-color #fffbe6
+
+.alert-info
+	border 1px solid #91d5ff
+	background-color #e6f7ff
+
+.alert-success
+	border 1px solid #b7eb8f
+	background-color #f6ffed
+
+.anticon.anticon-cross-circle-o.ant-notification-notice-icon.ant-notification-notice-icon-error
+	margin-top 4px
+
+#react_container
+	height 100%
+
+.center-error
+	margin 80px auto
+	text-align center
+
+.data-err-page
+	margin auto;
+	margin-top 50px;
+	width 750px;
+	padding 20px;
+	font-size 18px;
+	text-align center;
+	color #5d5d5d;
+	background-color #FFF;
+	box-shadow 2px 2px 4px -2px rgba(0, 0, 0, .5);
+	z-index 9999;
+
+.data-err-page-img
+	margin auto
+	height 85px
+	width 85px
+	
+.redirect-home
+	cursor pointer
+	font-size 15px
+	padding 2px 20px
+	line-height 28px
+	letter-spacing 1px
+	color #fff
+	border none
+	outline none
+	background #496DF5
+	transition all ease-in-out .5s
+	
+.err-btn
+	margin-top 50px
+
+
+@keyframes App-logo-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}

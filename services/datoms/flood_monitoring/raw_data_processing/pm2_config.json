@@ -1,0 +1,15 @@
+{
+	"apps": [{
+		"name": "datoms-flood-monitoring-process-raw-data-for-station",
+		"script": "./process_raw_data_for_station.js"
+	}, {
+		"name": "datoms-flood-monitoring-process-avg-data",
+		"script": "./process_avg_data.js"
+	}, {
+		"name": "datoms-check-for-historical-data-received-from-device",
+		"script": "./check_for_historical_data_received_from_device.js"
+	}, {
+		"name": "datoms-device-historical-data-processing",
+		"script": "./process_device_historical_data.js"
+	}]
+}

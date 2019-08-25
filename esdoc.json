@@ -1,0 +1,4 @@
+{
+  "source": "./src/app/js/components",
+  "destination": "./DOCUMENTATION/Frontend/Doc"
+}

@@ -1,0 +1,4 @@
+module.exports = {
+    db_connection: '/var/www/phoenixrobotix/src/backend/dbConnections/DatabaseDetails.js',
+    acl_library: '/var/www/phoenixrobotix/src/backend/library/AccessControlListLibrary.js'
+}

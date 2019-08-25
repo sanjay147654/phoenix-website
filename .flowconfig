@@ -1,0 +1,16 @@
+[ignore]
+/node_modules/**/*
+/dist/**/*
+/webpack.config/*
+/test_script/*
+/demo_db_setup/*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

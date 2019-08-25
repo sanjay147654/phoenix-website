@@ -1,0 +1,6 @@
+{
+	"apps": [{
+		"name": "datoms-flood-monitoring-data-push-to-inrm-ftp",
+		"script": "./push.js"
+	}]
+}

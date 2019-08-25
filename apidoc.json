@@ -1,0 +1,10 @@
+{
+	"name": "Kolkata Flood Monitoring",
+	"version": "0.1.0",
+	"description": "Kolkata Flood Monitoring WebApp API Documentation",
+	"title": "API Documentation for Kolkata Flood Monitoring WebApp",
+	"template": {
+		"withCompare": true,
+		"withGenerator": true
+	}
+}
